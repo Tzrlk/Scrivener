@@ -1,5 +1,6 @@
 package nz.co.aetheric.scrivener.user;
 
+@Entity
 public class UserBean {
 
     Long id;
