@@ -9,7 +9,7 @@
     
     <parent>
         <groupId>nz.co.aetheric</groupId>
-        <artefactId>scrivener-parent</artefactId>
+        <artifactId>scrivener-parent</artifactId>
         <version>1.0.1-SNAPSHOT</version>
         <relativePath>../../parent/pom.xml</relativePath>
     </parent>
@@ -24,7 +24,7 @@
         
         <dependency>
             <groupId>nz.co.aetheric</groupId>
-            <artefactId>scrivener-core</groupId>
+            <artifactId>scrivener-core</groupId>
             <version>${project.version}</groupId>
         </dependency>
         

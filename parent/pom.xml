@@ -9,7 +9,7 @@
     
     <parent>
         <groupId>nz.co.aetheric</groupId>
-        <artefactId>company-core</artefactId>
+        <artifactId>company-core</artifactId>
         <version>1.0</version>
     </parent>
 
@@ -42,6 +42,22 @@
         <system>github</system>
         <url>https://github.com/Tzrlk/Scrivener/issues</url>
     </issueManagement>
+
+    <distributionManagement>
+
+        <repository>
+            <id>aetheric-releases</id>
+            <url>dav:https://github.com/Tzrlk/Maven/raw/master/releases</url>
+            <uniqueVersion>false</uniqueVersion>
+        </repository>
+
+        <snapshotRepository>
+            <id>aetheric-snapshots</id>
+            <url>dav:https://github.com/Tzrlk/Maven/raw/master/snapshots</url>
+            <uniqueVersion>true</uniqueVersion>
+        </snapshotRepository>
+
+    </distributionManagement>
 
     <properties>
         <spring.version>3.1.2.RELEASE</spring.version>
