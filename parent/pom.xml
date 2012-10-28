@@ -20,4 +20,33 @@
     <name>Scrivener Persistence</name>
     <description>Manages common dependencies and versions.</description>
 
+    <dependencyManagement>
+        <dependencies>
+
+            <dependency>
+                <groupId>nz.co.aetheric</groupId>
+                <artifactId>company-logging</artifactId>
+                <version>1.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.0</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <issueManagement>
+        <system>github</system>
+        <url>https://github.com/Tzrlk/Scrivener/issues</url>
+    </issueManagement>
+
+    <properties>
+        <spring.version>3.1.2.RELEASE</spring.version>
+        <jersey.version>1.10</jersey.version>
+        <spring.security.version>3.1.0.RC3</spring.security.version>
+    </properties>
+
 </project>

@@ -28,4 +28,10 @@
         <module>webapp</module>
     </modules>
 
+    <scm>
+        <connection>scm:git:https://github.com/Tzrlk/Scrivener.git</connection>
+        <developerConnection>scm:git:git@github.com:Tzrlk/Scrivener.git</developerConnection>
+        <url>https://github.com/Tzrlk/Scrivener</url>
+    </scm>
+
 </project>

@@ -1,3 +1,5 @@
+.idea/
+.c9revisions/
 target/
 *.iml
-.idea
+.project

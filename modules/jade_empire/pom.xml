@@ -14,17 +14,11 @@
         <relativePath>../parent/pom.xml</relativePath>
     </parent>
 
-    <artifactId>scrivener-modules</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>scrivener-modules-jadeempire</artifactId>
+    <packaging>jar</packaging>
 
-    <name>Scrivener Modules Reactor</name>
-    <description>Groups together all sub modules in one place so they can be
-    compiled / packaged / etc as a single unit.</description>
-
-    <modules>
-        <module>parent</module>
-        <module>masque</module>
-        <module>jade_empire</module>
-    </modules>
+    <name>Scrivener Jade Empire Module</name>
+    <description>Contains all the objects and logic required to manage a game
+    of Jade Empire.</description>
 
 </project>
