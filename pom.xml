@@ -25,6 +25,8 @@
         <module>parent</module>
         <module>core</module>
         <module>modules</module>
+        <module>api</module>
+        <module>client</module>
         <module>webapp</module>
     </modules>
 
