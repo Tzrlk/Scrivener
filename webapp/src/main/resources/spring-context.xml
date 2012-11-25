@@ -22,6 +22,6 @@
 
     <context:annotation-config/>
 
-    <import resource="classpath:persist-context.xml"/>
+    <import resource="classpath:core-context.xml"/>
 
 </beans>

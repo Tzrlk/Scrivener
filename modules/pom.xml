@@ -9,9 +9,9 @@
     
     <parent>
         <groupId>nz.co.aetheric</groupId>
-        <artifactId>scrivener-parent</artifactId>
+        <artifactId>scrivener-modules-parent</artifactId>
         <version>1.0.1-SNAPSHOT</version>
-        <relativePath>../parent/pom.xml</relativePath>
+        <relativePath>./parent/pom.xml</relativePath>
     </parent>
 
     <artifactId>scrivener-modules</artifactId>

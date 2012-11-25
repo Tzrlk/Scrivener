@@ -9,8 +9,8 @@ import javax.ws.rs.*;
 
 @Component
 @Path("api/user")
-public class ComparisonResource /*implements UserApi*/ {
-    private static final Logger log = LoggerFactory.getLogger(USerResource.class);
+public class UserResource implements UserApi {
+    private static final Logger log = LoggerFactory.getLogger(UserResource.class);
 
     @Resource
     UserDao userDao;

@@ -1,10 +1,17 @@
 package nz.co.aetheric.scrivener.auth;
 
+import nz.co.aetheric.scrivener.MessageService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.annotation.Resource;
+import javax.validation.Valid;
 
 @Controller
 public class AuthController {
@@ -13,7 +20,7 @@ public class AuthController {
     public static final String PATH_SYSTEM_LOGIN = "/auth/login";
     
     @Resource
-    MsgService msgService;
+    MessageService messages;
     
     @RequestMapping(value = PATH_SYSTEM_LOGIN, method = RequestMethod.GET)
     public String systemLogin(
@@ -37,7 +44,7 @@ public class AuthController {
         
     ) {
         if (formBinding.hasErrors()) {
-            String msg = msgService.getMessage("auth.login.invalid");
+            String msg = messages.getMessage("auth.login.invalid");
             redirect.addFlashAttribute("error", msg);
             return "/auth/login";
         }
@@ -46,11 +53,11 @@ public class AuthController {
         
         boolean loginFailed = false;
         if (loginFailed) {
-            String msg = msgService.getMessage("auth.login.failed");
+            String msg = messages.getMessage("auth.login.failed");
             redirect.addFlashAttribute("error", msg);
             return "redirect:" + PATH_SYSTEM_LOGIN;
         }
         
-        return "redirect:" + PATH_SYSTEM_MAIN;
+        return "redirect:" + form.getRedirect();
     }
 }

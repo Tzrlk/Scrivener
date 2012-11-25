@@ -1,4 +1,4 @@
-package nz.co.aetheric.poopermacho.comparison;
+package nz.co.aetheric.scrivener.user;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

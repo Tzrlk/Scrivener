@@ -1,5 +1,7 @@
 package nz.co.aetheric.scrivener.user;
 
+import javax.persistence.Entity;
+
 @Entity
 public class UserBean {
 

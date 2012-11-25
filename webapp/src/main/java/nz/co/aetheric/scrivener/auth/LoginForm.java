@@ -1,6 +1,6 @@
 package nz.co.aetheric.scrivener.auth;
 
-import static nz.co.aetheric.scrivener.user.PATH_PROFILE_EDIT;
+import static nz.co.aetheric.scrivener.user.UserController.PATH_PROFILE_EDIT;
 
 public class LoginForm {
     String username;

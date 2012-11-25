@@ -9,7 +9,7 @@
     
     <parent>
         <groupId>nz.co.aetheric</groupId>
-        <artifactId>scrivener-parent</artifactId>
+        <artifactId>scrivener-modules-parent</artifactId>
         <version>1.0.1-SNAPSHOT</version>
         <relativePath>../parent/pom.xml</relativePath>
     </parent>
@@ -18,7 +18,6 @@
     <packaging>jar</packaging>
 
     <name>Scrivener Masque Module</name>
-    <description>Contains all the objects and logic required to manage a game
-    of Masque.</description>
+    <description>Contains all the objects and logic required to manage a game of Masque.</description>
 
 </project>

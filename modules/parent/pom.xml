@@ -24,8 +24,8 @@
         
         <dependency>
             <groupId>nz.co.aetheric</groupId>
-            <artifactId>scrivener-core</groupId>
-            <version>${project.version}</groupId>
+            <artifactId>scrivener-core</artifactId>
+            <version>${project.version}</version>
         </dependency>
         
     </dependencies>

@@ -21,13 +21,69 @@
     <description>The web application layer of Scrivener.</description>
     
     <dependencies>
-    
+
         <dependency>
             <groupId>nz.co.aetheric</groupId>
-            <artifactId>scrivener-masque</artifactId>
+            <artifactId>company-logging</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>nz.co.aetheric</groupId>
+            <artifactId>scrivener-core</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>nz.co.aetheric</groupId>
+            <artifactId>scrivener-api</artifactId>
             <version>${project.version}</version>
         </dependency>
     
+        <dependency>
+            <groupId>nz.co.aetheric</groupId>
+            <artifactId>scrivener-modules-jadeempire</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>nz.co.aetheric</groupId>
+            <artifactId>scrivener-modules-masque</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>3.1.1.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.jersey</groupId>
+            <artifactId>jersey-core</artifactId>
+            <version>1.10</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>4.3.0.Final</version>
+        </dependency>
+
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>tomcat-maven-plugin</artifactId>
+                <version>1.1</version>
+                <configuration>
+                    <path>/</path>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
