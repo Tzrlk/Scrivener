@@ -9,7 +9,11 @@ import javax.annotation.Resource;
 @Controller
 public class UserController {
     private static final Logger log = LoggerFactory.getLogger(UserController.class);
+    
+    public static final String PATH_PROFILE_EDIT = "/user/profile";
 
     @Resource
     UserDao userDao;
+    
+    
 }
