@@ -19,6 +19,7 @@
 
     <mvc:resources mapping="/favicon.ico" location="/res/favicon.ico"/>
     <mvc:resources mapping="/res/**" location="/res/"/>
+	<mvc:resources mapping="/app/**" location="/app/"/>
 
     <mvc:view-controller path="/" view-name="redirect"/>
 
