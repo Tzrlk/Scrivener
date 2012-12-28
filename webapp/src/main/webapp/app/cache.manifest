@@ -1,0 +1,12 @@
+CACHE MANIFEST
+
+CACHE:
+//ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.min.js
+//raw.github.com/angular-ui/angular-ui/v0.3.2/build/angular-ui.min.css
+//raw.github.com/angular-ui/angular-ui/v0.3.2/build/angular-ui.min.js
+//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css
+//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js
+
+NETWORK:
+
+FALLBACK:
